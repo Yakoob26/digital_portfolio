@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+/* Global Body Styles */
+body {
+    font-family: 'Georgia', serif; /* Elegant serif font for a classy feel */
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Dark background for a luxurious feel */
+    color: #f1f1f1; /* Light text for high contrast */
+    line-height: 1.7;
+}
+
+/* Header Styling */
+header {
+    background-color: #000; /* Deep black for a sleek, elegant look */
+    color: #D4AF37; /* Gold text for a touch of luxury */
+    text-align: center;
+    padding: 5rem 2rem;
+    position: relative;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    animation: fadeIn 2s ease-out; /* Adding a fade-in animation */
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 150px; /* Larger profile picture to create more visual interest */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid #D4AF37; /* Gold border for elegance */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Strong shadow for a floating effect */
+    transition: transform 0.4s ease-in-out;
+}
+
+.profile-picture:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* Smooth zoom effect */
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #111; /* Very dark gray for a soft contrast */
+    color: #D4AF37; /* Gold text for navigation links */
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #D4AF37; /* Gold links for a luxurious look */
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #D4AF37; /* Gold background on hover */
+    color: #111; /* Dark text on hover for contrast */
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Section Content Styling */
+.section-content {
+    background-color: #333; /* Dark gray background for sections */
+    padding: 3rem;
+    margin: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Soft shadow for a lifted effect */
+    color: #f1f1f1; /* Light text color */
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.section-content h2 {
+    font-size: 2.2rem;
+    color: #D4AF37; /* Gold titles for emphasis */
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.section-content p {
+    color: #ccc; /* Slightly lighter text for paragraphs */
+}
+
+/* Download Button Styling */
+.download-button {
+    background-color: #D4AF37; /* Luxurious gold button */
+    color: #111;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #c68c29; /* Slightly darker gold on hover */
+    transform: translateY(-4px); /* Lift effect on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #111;
+    color: #D4AF37; /* Gold text for footer */
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+ul li::before {
+    content: "\2022"; /* Unicode bullet for custom list style */
+    color: #D4AF37; /* Gold bullet for luxury look */
+    position: absolute;
+    left: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2.8rem; /* Smaller heading size for mobile */
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .section-content {
+        margin: 1rem;
+        padding: 2rem;
+    }
+
+    .download-button {
+        padding: 12px 24px; /* Smaller button size for mobile */
+    }
+}
+.profile-img {
+            width: 150px; /* Adjust to the size you want */
+            height: 150px; /* Should be the same as width to keep it circular */
+            border-radius: 50%; /* Makes the image round */
+            object-fit: cover; /* Ensures the image fills the circle without distortion */
+            border: 2px solid #ddd; /* Optional border around the image */
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="C:\Users\TAMILKUMARAN\OneDrive\Desktop\yakoob\yakoob.jpeg" alt="Profile Picture" class="profile-img">
+            
+            <h1>Mohammed yakoob Z</h1>
+            <p>Cloud Archithect</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm a <b>Cloud Archithect</b> expert who is passionate about creating dynamic and user-friendly websites. 
+                I'm driven by the desire to craft high-performance web applications that enhance user experience and provide
+                 seamless digital solutions. With over 7 years of experience in the field, I'm dedicated to staying up to date 
+                 with the latest trends and innovations in the 
+                 web development landscape. I'm also committed to helping others learn more about web technologies, 
+                 best practices, and how to build secure and scalable websites.</p>
+
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>Madras University-BCA</p>
+            
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>React</li>
+                <li>Mern</li>
+                <li>Cloud Computing</li>
+                <li>Python</li>
+                <li>Spring</li>
+                <li>ML & AI</li>
+                <li>java</li>
+                <li>c++</li>
+                <li>Java script</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">E Cart website</a></li>
+                <li><a href="#">Cloud Security IBM</a></li>
+                <li><a href="#">IBM chatbot</a></li>
+                <li><a href="#">College Portal</a></li> 
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="C:\Users\TAMILKUMARAN\OneDrive\Desktop\yakoob\MOHAMMED YAKOOB (1).pdf" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mohammed Yakoob</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
